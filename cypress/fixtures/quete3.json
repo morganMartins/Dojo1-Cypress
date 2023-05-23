@@ -1,25 +1,5 @@
-[
-    {
+ {
         "title": "firstNote",
         "description": "Je vous écris cette belle note",
         "category": "Personal"
-  },
-
-  {
-    "title": "secondNote",
-    "description": "Je vous écris une autre belle note",
-    "category": "Personal"
-}, 
-
-{
-    "title": "thirdNote",
-    "description": "Je vous écris encore une belle note",
-    "category": "Personal"
-},
-
-{
-    "title": "fourthNote",
-    "description": "Je vous écris une dernière belle note",
-    "category": "Personal"
-}
-  ]
+  }

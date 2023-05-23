@@ -34,25 +34,27 @@ describe('swaggerNotes', () => {
         })
     })
 
+    
     it('postNotes', () => {
 
-        
+        cy.fixture("quete3").then((user) => {
 
         cy.request({
             url: 'https://practice.expandtesting.com/notes/api/notes',
             method: "POST",
             headers: {
-                "X-Auth-Token": '4e85f7af6f98420cbc2d9e8eccc52e38cacdd29ff22046cca0961f03e1f56f78',
+                "x-auth-token": '4e85f7af6f98420cbc2d9e8eccc52e38cacdd29ff22046cca0961f03e1f56f78',
                 accept: 'application/json',
               },
             body: {
-                "title": "Note 1",
-                "description": "première note",
-                "category": "Personal"
+                title: user.title,
+                description: user.description,
+                category: user.category,
             }
         }).then((response) =>{
             expect(response.status).to.eql(200);
         })
+    })
     })
 
 
